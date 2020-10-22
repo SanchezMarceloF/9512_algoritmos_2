@@ -36,11 +36,14 @@ Arreglo::~Arreglo(){
 }
 
 //sobrecarga operador indexacion
-
+double& Arreglo::operator[](int indice){
+	return ptr[indice];
+}
 
 //metodo obtener
-double& Arreglo::get_valor(int indice){
+/*double& Arreglo::get_valor(int indice){
 		return *(ptr + indice);//retorna como referencia
 		//lo que se apunta sumado el indice
-}
-		
+}*/
+
+

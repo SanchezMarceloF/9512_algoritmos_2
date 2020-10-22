@@ -21,7 +21,10 @@ class Arreglo{
   ~Arreglo();
 
   //Metodo obtener
-  double& get_valor(int);
+  //double& get_valor(int);
+
+  //sobrecarga del operador indexacion
+  double& operator[](int);
 	
   //Metodo sumar
   //PRE: Se debe pasar arreglo (puntero) y los indices a,b
